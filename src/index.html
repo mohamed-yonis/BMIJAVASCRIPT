@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-gray-200" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <!-- container -->
+    <div class="bg-white p-4 w-96 h-screen rounded-2xl">
+        <!-- box -->
+        <div class="bg-gray-100 h-full rounded-2xl px-5 py-5">
+            <h1 class="text-center font-bold text-4xl font-serif my-5">BMI Calculator</h1>
+            <!-- height input  -->
+            <div class="bg-white my-4 rounded-2xl h-24 p-2">
+                <p class="text-center my-2" for="#">Height in(M)</p>
+                <input type="text" class=" height ml-16 py-2  border-b-2  border-blue-500"
+                    placeholder="Enter Height like 1.5m ">
+            </div>
+            <!-- weight input  -->
+            <div class="bg-white my-4 rounded-2xl h-24 p-2">
+                <p class="text-center my-2" for="#">Weight in(kg)</p>
+                <input type="text" class=" weight ml-16 py-2 border-b-2 border-blue-500"
+                    placeholder="Enter Weight as kg 55kg ">
+            </div>
+
+            <button class="bg-blue-500 py-2 px-5 w-full rounded-lg text-white text-lg"
+                onclick="Calculate();">Calculate</button>
+            <p class="text-center py-2  mb-4 text-2xl">Your BMI is</p>
+            <span style="margin-top: 30px;"
+                class="bmi text-lg font-bold ml-28 absolute bottom-28 text-blue-400  bg-gray-300 p-3 rounded-lg">00.00</span>
+            <br>
+            <span style="margin-top: 30px;" class="result absolute bottom-16  ">Comment: You are </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
